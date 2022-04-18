@@ -6,5 +6,6 @@ steps:
   image: maven:3-jdk-11
   commands:
   - mvn clean install -DskipTests=true
-  when:
-    event: deployment
+trigger:
+  event: 
+  - deployment
